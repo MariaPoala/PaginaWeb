@@ -1,4 +1,5 @@
 /* This example requires Tailwind CSS v2.0+ */
+import Head from 'next/head'
 const features = [
   { name: 'Origin', description: 'Designed by Good Goods, Inc.' },
   { name: 'Material', description: 'Solid walnut base with rare earth magnets and polycarbonate add-ons.' },
@@ -128,40 +129,73 @@ const posts = [
 ]
 export default function Example() {
   return (
-    <div className="bg-white">
-      <div aria-hidden="true" className="relative">
-        <img
-          src="https://scontent.ftru5-1.fna.fbcdn.net/v/t39.30808-6/289258487_1234528247295344_5198981752037342513_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeHSVTs7RkcaSb5lY5AN0Vv-6rEKXRIEFLjqsQpdEgQUuB1n_IYzs3_HqFnoMRJ6EtYTGri8Qnhoh8eZ_JplgYLx&_nc_ohc=Yzq8hqP0gGUAX_5zJhK&_nc_zt=23&_nc_ht=scontent.ftru5-1.fna&oh=00_AT_OKT4OkxTRZpywQMQMOIoM02K38pSa11z1kDTKV0Q-nA&oe=62FDCFC8"
-          alt=""
-          className="w-full h-96 object-center object-cover"
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-white" />
-      </div>
-
-
-
-
-
-
-
-      <div className="relative max-w-7xl mx-auto pb-16 px-4 sm:pb-24 sm:px-6 lg:px-8">
-        <div className="max-w-2xl mx-auto text-center lg:max-w-4xl">
-          <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">Municipalidad Distrital De Colca</h2>
-          <p className="mt-4 text-gray-500">
-            Somos una institución de servicio a la comunidad, cuyo fin es mejorar la calidad de vida
-            del pueblo Colquino, a través de la promoción laboral y empresarial con asistencia en
-            la salud y la educación. Tenemos vocación de servicio social para el bienestar y
-            desarrollo del distrito en base a una gestión transparente en conductas y acciones
-            administrativas-operativas para nuestra generación y las futuras.
-          </p>
+    <>
+      <Head>
+        <title>Pagina Web Colca</title>
+      </Head>
+      <div className="bg-white">
+        <div aria-hidden="true" className="relative">
+          <img
+            src="https://scontent.ftru5-1.fna.fbcdn.net/v/t39.30808-6/289258487_1234528247295344_5198981752037342513_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeHSVTs7RkcaSb5lY5AN0Vv-6rEKXRIEFLjqsQpdEgQUuB1n_IYzs3_HqFnoMRJ6EtYTGri8Qnhoh8eZ_JplgYLx&_nc_ohc=Yzq8hqP0gGUAX_5zJhK&_nc_zt=23&_nc_ht=scontent.ftru5-1.fna&oh=00_AT_OKT4OkxTRZpywQMQMOIoM02K38pSa11z1kDTKV0Q-nA&oe=62FDCFC8"
+            alt=""
+            className="w-full h-96 object-center object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-white" />
         </div>
 
-        <div className="bg-white">
-          <div className="max-w-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
-            <h2 className="text-2xl font-bold tracking-tight text-gray-900 font-serif">Noticias</h2>
 
+
+
+
+
+
+        <div className="relative max-w-7xl mx-auto pb-16 px-4 sm:pb-24 sm:px-6 lg:px-8">
+          <div className="max-w-2xl mx-auto text-center lg:max-w-4xl">
+            <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">Municipalidad Distrital De Colca</h2>
+            <p className="mt-4 text-gray-500">
+              Somos una institución de servicio a la comunidad, cuyo fin es mejorar la calidad de vida
+              del pueblo Colquino, a través de la promoción laboral y empresarial con asistencia en
+              la salud y la educación. Tenemos vocación de servicio social para el bienestar y
+              desarrollo del distrito en base a una gestión transparente en conductas y acciones
+              administrativas-operativas para nuestra generación y las futuras.
+            </p>
+          </div>
+
+          <div className="bg-white">
+            <div className="max-w-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
+              <h2 className="text-2xl font-bold tracking-tight text-gray-900 font-serif">Noticias</h2>
+
+              <div className="mt-6 grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8 ">
+                {Noticias.map((item: any) => (
+                  <div key={item.id} className="group relative bg-slate-100 rounded-md">
+                    <div className="w-full min-h-80 bg-gray-200 aspect-w-1 aspect-h-1 rounded-md overflow-hidden group-hover:opacity-75 lg:h-80 lg:aspect-none">
+                      <img
+                        src={item.image}
+                        className="w-full h-full object-center object-cover lg:w-full lg:h-full"
+                      />
+                    </div>
+                    <div className="mt-4 flex justify-between">
+                      <div>
+                        <h3 className="text-sm font-medium text-gray-900 ml-2">
+                          <a href={item.image}>
+                            <span aria-hidden="true" className="absolute inset-0" />
+                            {item.titulo}
+                          </a>
+                        </h3>
+                        <p className="mt-1 text-sm ml-2 text-gray-500">{item.fecha}</p>
+                        <p className="text-sm ml-2 text-gray-700 ">{item.Descripcion}</p>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          <div className="bg-white">
+            <h2 className="text-2xl font-bold tracking-tight text-gray-900 font-serif">Proximos eventos</h2>
             <div className="mt-6 grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8 ">
-              {Noticias.map((item: any) => (
+              {Evento.map((item: any) => (
                 <div key={item.id} className="group relative bg-slate-100 rounded-md">
                   <div className="w-full min-h-80 bg-gray-200 aspect-w-1 aspect-h-1 rounded-md overflow-hidden group-hover:opacity-75 lg:h-80 lg:aspect-none">
                     <img
@@ -171,12 +205,6 @@ export default function Example() {
                   </div>
                   <div className="mt-4 flex justify-between">
                     <div>
-                      <h3 className="text-sm font-medium text-gray-900 ml-2">
-                        <a href={item.image}>
-                          <span aria-hidden="true" className="absolute inset-0" />
-                          {item.titulo}
-                        </a>
-                      </h3>
                       <p className="mt-1 text-sm ml-2 text-gray-500">{item.fecha}</p>
                       <p className="text-sm ml-2 text-gray-700 ">{item.Descripcion}</p>
                     </div>
@@ -186,29 +214,7 @@ export default function Example() {
             </div>
           </div>
         </div>
-
-        <div className="bg-white">
-          <h2 className="text-2xl font-bold tracking-tight text-gray-900 font-serif">Proximos eventos</h2>
-          <div className="mt-6 grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8 ">
-            {Evento.map((item: any) => (
-              <div key={item.id} className="group relative bg-slate-100 rounded-md">
-                <div className="w-full min-h-80 bg-gray-200 aspect-w-1 aspect-h-1 rounded-md overflow-hidden group-hover:opacity-75 lg:h-80 lg:aspect-none">
-                  <img
-                    src={item.image}
-                    className="w-full h-full object-center object-cover lg:w-full lg:h-full"
-                  />
-                </div>
-                <div className="mt-4 flex justify-between">
-                  <div>
-                    <p className="mt-1 text-sm ml-2 text-gray-500">{item.fecha}</p>
-                    <p className="text-sm ml-2 text-gray-700 ">{item.Descripcion}</p>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
       </div>
-    </div>
+    </>
   )
 }

@@ -15,6 +15,7 @@
   }
   ```
 */
+import Head from 'next/head'
 import { Fragment, useState } from 'react'
 import { Dialog, Menu, Transition } from '@headlessui/react'
 import {
@@ -74,6 +75,9 @@ export default function Example() {
 
   return (
     <>
+      <Head>
+      <title>Turismo</title>
+    </Head>
       <div className="bg-gray-50">
         <div className="max-w-7xl mx-auto py-8 px-4 sm:py- sm:px-6 lg:px-4">
           <div className="sm:flex sm:items-baseline sm:justify-between">

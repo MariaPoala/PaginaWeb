@@ -14,6 +14,7 @@
   }
   ```
 */
+import Head from 'next/head'
 const features = [
   {
     nombre: 'Apoyo a la comunidad de Laria',
@@ -68,6 +69,10 @@ function classNames(...classes: any) {
 
 export default function Example() {
   return (
+    <>
+      <Head>
+      <title>Obras</title>
+    </Head>
     <div className="bg-white">
       <div className="max-w-2xl mx-auto py-10 px-4 sm:px-6 sm:py- lg:max-w-7xl lg:px-8">
         <div className="max-w-3xl mx-auto text-center">
@@ -108,6 +113,7 @@ export default function Example() {
           ))}
         </div>
       </div>
-    </div>
+    </div> 
+    </>
   )
 }
