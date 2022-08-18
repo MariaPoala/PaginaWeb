@@ -163,6 +163,9 @@ export default function Example() {
 
           <div className="bg-white">
             <div className="max-w-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
+              <h1 className='text-xl italic'> Descubre Nuestras Nuevas Plataformas Digitales</h1>
+              <img className='mt-2' src='https://fmawnrfwepqksamtepfh.supabase.co/storage/v1/object/sign/archivos/Semana 1.jpg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJhcmNoaXZvcy9TZW1hbmEgMS5qcGciLCJpYXQiOjE2NjA3OTQ0MzMsImV4cCI6MTk3NjE1NDQzM30.15HclQO9n-lYdF824oeDK2SdqYYm-TXjP42RX-ukS58'></img>
+              
               <h2 className="text-2xl font-bold tracking-tight text-gray-900 font-serif">Noticias</h2>
 
               <div className="mt-6 grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8 ">
