@@ -118,11 +118,7 @@ export default function Example({ setIsSidebarOpen }: IProps) {
             <div className="relative h-16 flex justify-between">
               <div className="relative z-10 px-2 flex lg:px-0">
                 <div className="flex-shrink-0 flex items-center">
-                  <img
-                    className="block h-20 w-auto"
-                    src="https://sentinelmarketing.net/wp-content/uploads/2021/03/Logo-Original-Transparente-Cecolca-1024x1024.png"
-                    alt="Workflow"
-                  />
+                  
                 </div>
               </div>
               <div className="relative z-0 flex-1 px-2 flex items-center justify-center sm:absolute sm:inset-0">

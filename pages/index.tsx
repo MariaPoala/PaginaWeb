@@ -21,7 +21,7 @@ const Noticias = [
     id: 2,
     titulo: 'Entrega de kits de abrigos',
     fecha: '16-08-22',
-    image: 'https://scontent.ftru5-1.fna.fbcdn.net/v/t39.30808-6/249940700_1085208922227278_8622236093859484402_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeH_SSfp1BMdCgZVsw_voF3LDYsgL3k5eswNiyAveTl6zKN1XB5l8_htBhKUZxQfxEg058_WBgK8jdFuLMRCnMKQ&_nc_ohc=n--UwuYRRugAX_kGYuN&_nc_zt=23&_nc_ht=scontent.ftru5-1.fna&oh=00_AT-Z7QXPvtuc5asAcu7s3ft9NLveB8yeiKUJfoS-cRkIyw&oe=62FD7402',
+    image: 'https://fmawnrfwepqksamtepfh.supabase.co/storage/v1/object/sign/archivos/249545099_1085208985560605_5747764856411307769_n.jpg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJhcmNoaXZvcy8yNDk1NDUwOTlfMTA4NTIwODk4NTU2MDYwNV81NzQ3NzY0ODU2NDExMzA3NzY5X24uanBnIiwiaWF0IjoxNjYwODQyMDIzLCJleHAiOjE5NzYyMDIwMjN9.ggdglMVpEkTeYCre-oTvKG3TACjRqFdo6Ni777E7IFw',
     Descripcion: "Familias vulnerables del distrito de Colca y anexos reciben kits de abrigo y alimentos para contrarrestar el friaje y las heladas. "
   },
   {
