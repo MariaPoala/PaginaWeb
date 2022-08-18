@@ -136,7 +136,7 @@ export default function Example() {
       <div className="bg-white">
         <div aria-hidden="true" className="relative">
           <img
-            src="https://scontent.ftru5-1.fna.fbcdn.net/v/t39.30808-6/289258487_1234528247295344_5198981752037342513_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeHSVTs7RkcaSb5lY5AN0Vv-6rEKXRIEFLjqsQpdEgQUuB1n_IYzs3_HqFnoMRJ6EtYTGri8Qnhoh8eZ_JplgYLx&_nc_ohc=Yzq8hqP0gGUAX_5zJhK&_nc_zt=23&_nc_ht=scontent.ftru5-1.fna&oh=00_AT_OKT4OkxTRZpywQMQMOIoM02K38pSa11z1kDTKV0Q-nA&oe=62FDCFC8"
+            src="https://fmawnrfwepqksamtepfh.supabase.co/storage/v1/object/sign/archivos/FB_IMG_1601157919979.jpg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJhcmNoaXZvcy9GQl9JTUdfMTYwMTE1NzkxOTk3OS5qcGciLCJpYXQiOjE2NjA4NjE1OTgsImV4cCI6MTk3NjIyMTU5OH0.zlJMkQ9qvPbZuloZa-zFpFhNS7MZgye9RmE5uCfgqo4"
             alt=""
             className="w-full h-96 object-center object-cover"
           />
@@ -165,7 +165,7 @@ export default function Example() {
             <div className="max-w-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
               <h1 className='text-xl italic'> Descubre Nuestras Nuevas Plataformas Digitales</h1>
               <label>Descargar Aplicativo Movil</label>
-              <a className=' ml-4 text-indigo-400 italic hover:text-indigo-700' href='http://ai2.appinventor.mit.edu/b/3mxci'>Descarga Directo</a>
+              <a className=' ml-4 text-indigo-400 italic hover:text-indigo-700' href='http://ai2.appinventor.mit.edu/b/9pk5'>Descarga Directo</a>
               <a className='ml-4 text-indigo-400 italic hover:text-indigo-700' href='https://drive.google.com/drive/folders/1rXonbU0w3-5aNTXlEmFjjB1KetJmHKUS?usp=sharing'>Descarga por Drive</a>
               <img className=' mt-2' src='https://fmawnrfwepqksamtepfh.supabase.co/storage/v1/object/sign/archivos/Semana 1.jpg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJhcmNoaXZvcy9TZW1hbmEgMS5qcGciLCJpYXQiOjE2NjA3OTQ0MzMsImV4cCI6MTk3NjE1NDQzM30.15HclQO9n-lYdF824oeDK2SdqYYm-TXjP42RX-ukS58'></img>
               
