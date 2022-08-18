@@ -24,6 +24,7 @@ import { UserCircleIcon } from '@heroicons/react/outline'
 import Link from 'next/link'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { useUser } from '@auth0/nextjs-auth0'
+import { useRouter } from 'next/router'
 
 interface IMenuUsuario {
   name: string,
@@ -85,6 +86,7 @@ function classNames(...classes: any) {
 
 export default function Example({ setIsSidebarOpen }: IProps) {
   const { user, error, isLoading } = useUser();
+  const router = useRouter();
   if (isLoading) return <div>Loading...</div>;
   return (
 
@@ -118,7 +120,7 @@ export default function Example({ setIsSidebarOpen }: IProps) {
             <div className="relative h-16 flex justify-between">
               <div className="relative z-10 px-2 flex lg:px-0">
                 <div className="flex-shrink-0 flex items-center">
-                  
+
                 </div>
               </div>
               <div className="relative z-0 flex-1 px-2 flex items-center justify-center sm:absolute sm:inset-0">
@@ -156,14 +158,16 @@ export default function Example({ setIsSidebarOpen }: IProps) {
               {navigation.map((item) => (
                 <Link key={item.name} href={item.href}>
                   <a
-                    key={item.name}
                     href={item.href}
                     className={classNames(
-                      item.current ? 'bg-indigo-900 text-white' : 'text-indigo-300 hover:bg-indigo-700 hover:text-white',
-                      'rounded-md py-2 px-3 inline-flex items-center text-sm font-medium'
+                      router.pathname == item.href
+                        ? 'bg-indigo-600 text-white'
+                        : 'text-indigo-100 hover:bg-indigo-500',
+                      'group flex items-center px-2 py-2 text-sm leading-6 font-medium rounded-md hover:text-white hover:bg-indigo-500  focus:ring-indigo-500'
                     )}
                     aria-current={item.current ? 'page' : undefined}
                   >
+
                     {item.name}
                   </a>
                 </Link>
@@ -174,6 +178,8 @@ export default function Example({ setIsSidebarOpen }: IProps) {
           <Disclosure.Panel as="nav" className="lg:hidden" aria-label="Global">
             <div className="pt-2 pb-3 px-2 space-y-1">
               {navigation.map((item) => (
+
+                
                 <Disclosure.Button
                   key={item.name}
                   as="a"
@@ -188,36 +194,6 @@ export default function Example({ setIsSidebarOpen }: IProps) {
                 </Disclosure.Button>
               ))}
             </div>
-            {/* <div className="border-t border-indigo-700 pt-4 pb-3">
-              <div className="px-4 flex items-center">
-                <div className="flex-shrink-0">
-                  <img className="h-10 w-10 rounded-full" src={user.imageUrl} alt="" />
-                </div>
-                <div className="ml-3">
-                  <div className="text-base font-medium text-white">{user.name}</div>
-                  <div className="text-sm font-medium text-indigo-400">{user.email}</div>
-                </div>
-                <button
-                  type="button"
-                  className="ml-auto flex-shrink-0 bg-indigo-800 rounded-full p-1 text-indigo-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-indigo-800 focus:ring-white"
-                >
-                  <span className="sr-only">View notifications</span>
-                  <BellIcon className="h-6 w-6" aria-hidden="true" />
-                </button>
-              </div>
-              <div className="mt-3 px-2 space-y-1">
-                {userNavigation.map((item) => (
-                  <Disclosure.Button
-                    key={item.name}
-                    as="a"
-                    href={item.href}
-                    className="block rounded-md py-2 px-3 text-base font-medium text-indigo-400 hover:bg-indigo-700 hover:text-white"
-                  >
-                    {item.name}
-                  </Disclosure.Button>
-                ))}
-              </div>
-            </div> */}
           </Disclosure.Panel>
         </>
       )
