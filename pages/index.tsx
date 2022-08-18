@@ -164,7 +164,10 @@ export default function Example() {
           <div className="bg-white">
             <div className="max-w-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
               <h1 className='text-xl italic'> Descubre Nuestras Nuevas Plataformas Digitales</h1>
-              <img className='mt-2' src='https://fmawnrfwepqksamtepfh.supabase.co/storage/v1/object/sign/archivos/Semana 1.jpg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJhcmNoaXZvcy9TZW1hbmEgMS5qcGciLCJpYXQiOjE2NjA3OTQ0MzMsImV4cCI6MTk3NjE1NDQzM30.15HclQO9n-lYdF824oeDK2SdqYYm-TXjP42RX-ukS58'></img>
+              <label>Descargar Aplicativo Movil</label>
+              <a className=' ml-4 text-indigo-400 italic hover:text-indigo-700' href='http://ai2.appinventor.mit.edu/b/3mxci'>Descarga Directo</a>
+              <a className='ml-4 text-indigo-400 italic hover:text-indigo-700' href='https://drive.google.com/drive/folders/1rXonbU0w3-5aNTXlEmFjjB1KetJmHKUS?usp=sharing'>Descarga por Drive</a>
+              <img className=' mt-2' src='https://fmawnrfwepqksamtepfh.supabase.co/storage/v1/object/sign/archivos/Semana 1.jpg?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJhcmNoaXZvcy9TZW1hbmEgMS5qcGciLCJpYXQiOjE2NjA3OTQ0MzMsImV4cCI6MTk3NjE1NDQzM30.15HclQO9n-lYdF824oeDK2SdqYYm-TXjP42RX-ukS58'></img>
               
               <h2 className="text-2xl font-bold tracking-tight text-gray-900 font-serif">Noticias</h2>
 
